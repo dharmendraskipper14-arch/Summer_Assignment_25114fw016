@@ -1,0 +1,27 @@
+import java.util.Scanner;
+class primenumbers
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,j,n;
+        System.out.println("enter the range:");
+        n=sc.nextInt();
+        for(i=1;i<=n;i++){
+            int count=0;
+            for(j=1;j<=i;j++){
+                if(i%j==0){
+                    count++;
+                }
+            }
+        
+        
+        if(count==2){
+            System.out.println("prime numbers in the range are:"+i);
+        }
+        
+        }
+        sc.close();
+
+    }
+}
