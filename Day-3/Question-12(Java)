@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class lcm
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner (System.in);
+        int num1,num2;
+        System.out.println("Enter the numbers:");
+        num1=sc.nextInt();
+        num2=sc.nextInt();
+        int a=num1;int b=num2;
+        while(b!=0){
+            int temp=b;
+            b=a%b;
+            a=temp;
+            
+        }
+        int gcd=num1;
+        int lcm=(num1*num2)/gcd;
+        System.out.println("LCM OF TWO NUMBERS IS:"+lcm);
+    }
+}
