@@ -1,0 +1,33 @@
+import java.util.Scanner;
+class SumAverageArray
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,n,sum=0,average;
+        System.out.println("Enter the size:");
+        n=sc.nextInt();
+        int arr[]=new int[n];
+        System.out.println("ENTER THE ELEMENTS IN THE ARRAY:");
+        for(i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        System.out.println("ARRAY ELEMENTS SUM AND AVERAGE:");
+        for(i=0;i<n;i++){
+            sum+=arr[i];
+        }
+       average=sum/n;
+       System.out.println(sum+"  IS SUM OF ARRAY:");
+       System.out.println(average+"  IS AVERAGE OF ARRAY:");
+        sc.close();
+    }
+}
+
+        
+    
+
+
+     
+    
+    
+     
