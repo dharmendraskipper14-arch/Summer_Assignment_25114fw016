@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+class WordCount {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a sentence: ");
+        String str = sc.nextLine().trim();
+        if(str.isEmpty()){
+            System.out.println("Word Count=0");
+            return ;
+        }
+     int count=1;
+        for(int i=0;i<str.length()-1;i++){
+            char ch,d;
+            ch=str.charAt(i);
+            d=str.charAt(i+1);
+            if(ch==' ' && d!=' '){
+             count++;
+            }
+        }
+        System.out.println( "Word Count =" +count );
+        sc.close();
+    }
+}
