@@ -1,0 +1,9 @@
+class MiniLibrary {
+    public static void main(String[] args) {
+        String books[] = {"Java", "Python", "C++"};
+
+        System.out.println("Available Books:");
+        for (String book : books)
+            System.out.println(book);
+    }
+}
