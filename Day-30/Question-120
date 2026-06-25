@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+class StudentManagementProject {
+
+    static void display(String names[], int marks[]) {
+        System.out.println("\nStudent Records");
+        for (int i = 0; i < names.length; i++) {
+            System.out.println(names[i] + " - " + marks[i]);
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String names[] = new String[3];
+        int marks[] = new int[3];
+
+        for (int i = 0; i < 3; i++) {
+            System.out.print("Enter Name: ");
+            names[i] = sc.next();
+
+            System.out.print("Enter Marks: ");
+            marks[i] = sc.nextInt();
+        }
+
+        display(names, marks);
+
+        sc.close();
+    }
+}
