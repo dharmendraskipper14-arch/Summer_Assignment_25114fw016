@@ -8,6 +8,7 @@ class NumberGuessingGame {
 
         int number = rand.nextInt(100) + 1;
         int guess;
+        int number_of_guesses=0;
 
         do {
             System.out.print("Guess a number (1-100): ");
@@ -19,7 +20,12 @@ class NumberGuessingGame {
                 System.out.println("Too Low!");
             else
                 System.out.println("Correct! You guessed it.");
-        } while (guess != number);
+            number_of_guesses++;
+            
+        }  
+        
+        while (guess != number);
+        System.out.println("Total no guesses taken by you="+number_of_guesses);
 
         sc.close();
     }
