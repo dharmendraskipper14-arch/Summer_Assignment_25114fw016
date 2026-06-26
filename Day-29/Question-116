@@ -4,8 +4,10 @@ class InventoryManagement {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        String product = "Laptop";
-        int quantity = 20;
+        System.out.println("Enter the product and Quantity available:");
+
+        String product =sc.nextLine();
+        int quantity = sc.nextInt();
 
         System.out.println("Product: " + product);
         System.out.println("Quantity: " + quantity);
