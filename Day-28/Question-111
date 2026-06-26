@@ -1,10 +1,13 @@
 import java.util.Scanner;
+import java.util.Random;
 
 class TicketBooking {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        Random rand=new Random();
+    
 
-        int seats = 10;
+        int seats = rand.nextInt(100);
 
         System.out.print("Enter number of tickets: ");
         int tickets = sc.nextInt();
